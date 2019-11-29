@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+.bg {
+    background-color: #eceff1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23b51e72' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23650040' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23630e1e' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23980520' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d86a9c' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23303124' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%234e4a77' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23930d5a' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23b1188b' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%238a4b58' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23b20bc2' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%2382198d' points='943 900 1210 900 971 687'/%3E%3C/svg%3E"), url("img/bg.svg");
+    background-attachment: fixed;
+    background-size: cover, 20%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, 104% -10%;
+    min-height: 100%;
+}
+
+.sm-font {
+    font-size: small !important;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+}
+
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    padding: 0;
+    padding-left: 0.9em;
+}
+
+.lob-font {
+    font-family: 'Lobster', cursive;
+}
+
+.recipe-item {
+    background-color: wheat;
+    padding: 0 !important;
+}
+
+.recipe-item .card-body {
+    padding: 0;
+}
+
+.recipe-item p {
+    overflow: hidden;
+}

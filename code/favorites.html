@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css.css" />
+    <script type="text/javascript" src="static/js.js"></script>
+  </head>
+  <body>
+    <div class="bg">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-custom">
+        <a class="navbar-brand lob-font" href="byingredients.html"
+          >Receipe Finder</a
+        >
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="byingredients.html"
+                >Search Recipes By Ingredients</a
+              >
+            </li>
+            
+            <li class="nav-item active favorites">
+              <a class="nav-link" href="favorites.html">Favorites</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <a class="nav-link" href="byingredients.html">Si9ma</a> -->
+        <button id="logOut">log out</button>
+      </nav>
+
+      <div class="row mt-5">
+        <div class="card no-border col-9 text-center ml-auto mr-auto pb-5 mb-5">
+          <div id='duplicate' class="card-body text-center mt-1 mb-1 recipe-div">
+            <h5 class="card-title lob-font">Favorites</h5>
+
+            <div class="row mt-1 mb-1 recipe">
+              <div
+                class="card col-11 ml-auto mr-auto no-border recipe-item"
+                onclick="to('recipe.html')"
+              >
+                <div class="row no-gutters">
+                  <div class="col-md-2">
+                    <img
+                      src="https://spoonacular.com/recipeImages/ginger-beef-with-broccoli-29559.jpg"
+                      class="card-img"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body" style="padding: 10px">
+                      <h5 class="card-title title">First Recipe</h5>
+                      <p class="card-text time"></p>
+                      <p class="card-text servings"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery-3.1.0.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/favourites.js"></script>
+  </body>
+</html>

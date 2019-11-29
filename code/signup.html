@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css.css" />
+  </head>
+  <body class="bg">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="title mt-5 pt-5">
+          Recipe Finder
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-11 col-sm-11 col-md-11 col-lg-8 col-xl-4 ml-auto mr-auto">
+        <div class="card no-border mt-5 pt-3">
+          <div class="row">
+            <div class="col-11 ml-auto mr-auto">
+              <div class="card-body text-center mt-1 mb-1">
+                <h5 class="card-title lob-font">Sign Up</h5>
+                <form id="registrationForm" method="post" action="">
+                  <div class="form-group pt-3">
+                    <input
+                      required
+                      type="email"
+                      class="form-control"
+                      name="username"
+                      maxlength="100"
+                      id="emailRegister"
+                      placeholder="email"
+                    />
+                  </div>
+                  <div class="form-group pt-3">
+                    <input
+                      required
+                      type="password"
+                      class="form-control"
+                      minlength="6"
+                      name="password"
+                      id="passwordRegister"
+                      placeholder="password"
+                    />
+                  </div>
+                  <div class="form-group pt-3">
+                    <input
+                      required
+                      minlength="6"
+                      type="password"
+                      class="form-control"
+                      id="password2Register"
+                      name="password_confirm"
+                      placeholder="Confirm Password"
+                      oninput="checkPassword(this)"
+                    />
+                  </div>
+                  <script>
+                    function checkPassword(input) {
+                      if (
+                        input.value != document.getElementById('password').value
+                      ) {
+                        input.setCustomValidity('Password Must be Matching.')
+                      } else {
+                        input.setCustomValidity('')
+                      }
+                    }
+                  </script>
+
+                  <div class="row pt-3">
+                    <div class="col-12">
+                      <button
+                        class="btn btn-primary btn-sm col-12"
+                        type="submit"
+                      >
+                        Sign Up
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="row mt-3 pt-3">
+                  <div class="col-12 text-center">
+                    <p class="sm-font">
+                      Have an account?
+                      <a href="signin.html" class="text-decoration-none"
+                        >Sign In</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery-3.1.0.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
